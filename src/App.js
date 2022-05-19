@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Soy un ecommerce onda Steam
         </a>
       </header>
     </div>
