@@ -10,7 +10,7 @@ function NavBar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul className="navbar-nav gap-3 mt-2">
+                    <ul className="navbar-nav gap-4 mt-2">
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -28,7 +28,6 @@ function NavBar() {
             </div>
         </nav>
     )
-
 }
 
 export default NavBar;
