@@ -1,24 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from './components/NavBar';
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.bundle.min"
+import './index.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Soy un ecommerce onda Steam
-        </a>
-      </header>
-    </div>
+      <NavBar />
   );
 }
 

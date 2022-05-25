@@ -11,3 +11,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --background-color: #22223b;
+  --nav-color: #a8dadc;
+  --nav-active-color: #f1faee;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #4a4e69 !important;
+}
+
+.contenedorNuevo {
+  margin-left: 1rem;
+}
+
+.nav-tipografia {
+  font-size: 1.1rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.logoEstilo{
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--nav-color);
+  font-family: 'Prompt', sans-serif;
+}
+
+.logoEstilo:hover{
+  color: var(--nav-color) !important;
+}
+
+a:hover{
+  color: var(--nav-active-color) !important;
+  transition: 0.2s;
+}
+
+.nav-link.active{
+  color: var(--nav-color) !important;
+}
