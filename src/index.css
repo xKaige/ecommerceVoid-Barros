@@ -19,13 +19,19 @@ code {
   --nav-active-color: #f1faee;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
 body {
   background-color: #4a4e69 !important;
+}
+
+.nav-card-qt {
+  color: var(--nav-active-color);
+  padding-top: 10px;
+
 }
 
 .contenedorNuevo {
@@ -41,7 +47,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.logoEstilo{
+.logoEstilo {
   letter-spacing: 0.2rem;
   text-decoration: none;
   font-weight: bold;
@@ -50,16 +56,33 @@ body {
   font-family: 'Prompt', sans-serif;
 }
 
-.logoEstilo:hover{
+.logoEstilo:hover {
   color: var(--nav-color) !important;
 }
 
-a:hover{
+a:hover {
   color: var(--nav-active-color) !important;
   transition: 0.2s;
-  
+
 }
 
-.nav-link.active{
+.nav-link.active {
   color: var(--nav-color) !important;
+}
+
+
+.productos {
+  color: var(--nav-active-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.prueba:hover {
+  color: var(--nav-color) !important;
+  transition: 0.2s;
 }
