@@ -15,8 +15,10 @@ code {
 :root {
   --background-color: #22223b;
   --background-shadow-color: #2f2f4b;
+  --card-shadow-color: #383157;
   --nav-color: #a8dadc;
   --nav-active-color: #f1faee;
+  --bten-hover-color: #816697;
 }
 
 * {
@@ -85,4 +87,45 @@ p {
 .prueba:hover {
   color: var(--nav-color) !important;
   transition: 0.2s;
+}
+
+.card-size{
+  width: 20rem;
+  margin-left: 5rem;
+  background-color: var(--card-shadow-color);
+  color: var(--nav-color);
+}
+
+.card-size img{
+  height: 20rem;
+  width: 18rem;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0.5rem;
+  
+}
+
+.card-title{
+  color: var(--nav-active-color);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.input-size {
+  width: 5rem !important; 
+}
+
+.card-btn{
+  background-color: var(--nav-active-color);
+  border: none;
+}
+.card-btn:hover{
+  background-color: var(--bten-hover-color);
+  color: var(--nav-active-color);
+  transition: 0.2s;
+}
+
+.btn-add {
+  justify-items: center;
 }
