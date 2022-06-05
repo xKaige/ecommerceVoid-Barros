@@ -5,6 +5,7 @@ import './index.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from "./components/ItemListContainer";
 import ItemCount from "./components/ItemCount";
+import { useState } from "react"
 
 
 function App() {
@@ -16,11 +17,17 @@ function App() {
     }) 
   }
 
+  const [carrito, setCarrito] = useState(0);
+
+  const sumarCarrito = (cantidad) =>{
+    setCarrito ( carrito + cantidad )
+  }
+
   return (
     <>
-      <NavBar />
+      <NavBar cantidad={carrito} />
       <ItemListContainer greeting="VOID" />
-      <ItemCount inicial={1} max={10} onAdd={onAdd} />
+      <ItemCount inicial={1} max={10} onAdd={onAdd} agregarCantidad={sumarCarrito} />
     </>
   );
 }

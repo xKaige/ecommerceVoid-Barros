@@ -2,17 +2,19 @@ import Swal from 'sweetalert2'
 import { useState } from "react"
 import sunBreaker from "../img/sunbreaker.jpg"
 
-function ItemCount({ inicial, onAdd, max }) {
+function ItemCount({ inicial, onAdd, max, agregarCantidad }) {
 
     const [count, setCount] = useState(inicial)
     const [stock, setStock] = useState(max)
     
-    const sumar = () =>{
+         const sumar = () =>{
             count < max ? setCount ( count + 1 ) : alert("No puedes agregar mas productos")
+
         }
     
         const restar = () => {
             count > inicial ? setCount ( count - 1 ) : alert("Agregue productos por favor")
+
         }
     
         const reset = () => {
@@ -23,10 +25,18 @@ function ItemCount({ inicial, onAdd, max }) {
            stock >= count ? setStock ( stock - count ) : console.log("No hay stock de este producto")
         }
 
+        const validarCantidadSumar = () => {
+            return count + 1 > stock;
+        }
+        const validarCantidadAgregar = () => {
+            return count > stock;
+        }
+
         const ValidarStock = () => {
             if (stock <= 20 && stock!==0){
                 restarStock()
                 onAdd(count)
+                agregarCantidad(count)
                 reset()
             } if ( stock === 0){     
                 Swal.fire({
@@ -49,10 +59,10 @@ function ItemCount({ inicial, onAdd, max }) {
                     <div className="d-flex gap-3 justify-content-center mt-3">
                         <button onClick={restar} type="button" className="btn card-btn">-</button>
                         <h2>{count} </h2>
-                        <button onClick={sumar} type="button" className="btn card-btn">+</button>
+                        <button onClick={sumar} type="button" className="btn card-btn" disabled={validarCantidadSumar()}>+</button>
                     </div>
                     <div className="d-flex gap-3 justify-content-center mt-1">
-                        <button onClick={() => { ValidarStock() }} type="button" className="btn card-btn mt-3 btn-sm btn-add">Agregar al Carrito</button>
+                        <button onClick={() => { ValidarStock() }} type="button" className="btn card-btn mt-3 btn-sm btn-add" disabled={validarCantidadAgregar()}>Agregar al Carrito</button>
                     </div>
                 </div>
             </div>

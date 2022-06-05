@@ -1,6 +1,7 @@
 import CartWidget from "./CartWidget";
 
-function NavBar() {
+
+function NavBar({ cantidad }) {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav-tipografia">
             <div className="container-fluid">
@@ -28,7 +29,7 @@ function NavBar() {
                             <a className="nav-link prueba" href="/"><CartWidget /></a>
                         </li>
                         <li className="nav-item">
-                            <p className="nav-card-qt">3</p>
+                            <p className="nav-card-qt">{ cantidad }</p>
                         </li>
                     </ul>
 
