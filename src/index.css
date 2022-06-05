@@ -91,13 +91,15 @@ p {
 
 .card-size{
   width: 20rem;
-  margin-left: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
   background-color: var(--card-shadow-color);
   color: var(--nav-color);
 }
 
 .card-size img{
-  height: 20rem;
+  height: 12rem;
   width: 18rem;
   margin-top: 10px;
   margin-left: auto;
@@ -108,7 +110,7 @@ p {
 
 .card-title{
   color: var(--nav-active-color);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -119,6 +121,7 @@ p {
 .card-btn{
   background-color: var(--nav-active-color);
   border: none;
+  height: 2rem;
 }
 .card-btn:hover{
   background-color: var(--bten-hover-color);
@@ -128,4 +131,8 @@ p {
 
 .btn-add {
   justify-items: center;
+}
+
+.card-btn-cart{
+  background-color: var(--nav-color)
 }

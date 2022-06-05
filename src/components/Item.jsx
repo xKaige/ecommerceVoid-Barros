@@ -1,8 +1,7 @@
 import Swal from 'sweetalert2'
 import { useState } from "react"
-import sunBreaker from "../img/sunbreaker.jpg"
 
-function ItemCount({ inicial, onAdd, max, agregarCantidad }) {
+function Item({ inicial, onAdd, max, agregarCantidad, nombre, imagen, id }) {
 
     const [count, setCount] = useState(inicial)
     const [stock, setStock] = useState(max)
@@ -50,19 +49,19 @@ function ItemCount({ inicial, onAdd, max, agregarCantidad }) {
 
     return (
         <>
-            <div className="card card-size d-flex ">
+            <div className="card card-size mt-5">
                 <div className="card-body">
-                    <h5 className="card-title fw-bolder">Monster Hunter Rise SunBreaker</h5>
-                    <span>Stock: {stock} unidades </span>
-                    <img src={sunBreaker} className="card-img-top" alt="..."></img>
+                    <h5 className="card-title fw-bolder"> {nombre} </h5>
+                    <span className='fw-bold'>Stock:</span><span> {stock} unidades </span>
+                    <img src={imagen} className="card-img-top" alt="..."></img>
                     <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur interdum libero et mollis.</p>
                     <div className="d-flex gap-3 justify-content-center mt-3">
                         <button onClick={restar} type="button" className="btn card-btn">-</button>
                         <h2>{count} </h2>
-                        <button onClick={sumar} type="button" className="btn card-btn" disabled={validarCantidadSumar()}>+</button>
+                        <button onClick={sumar} type="button" className=" btn card-btn" disabled={validarCantidadSumar()}>+</button>
                     </div>
                     <div className="d-flex gap-3 justify-content-center mt-1">
-                        <button onClick={() => { ValidarStock() }} type="button" className="btn card-btn mt-3 btn-sm btn-add" disabled={validarCantidadAgregar()}>Agregar al Carrito</button>
+                        <button onClick={() => { ValidarStock() }} type="button" className="btn card-btn-cart mt-3 btn-sm btn-add" disabled={validarCantidadAgregar()}>Agregar al Carrito</button>
                     </div>
                 </div>
             </div>
@@ -70,4 +69,4 @@ function ItemCount({ inicial, onAdd, max, agregarCantidad }) {
     )
 }
 
-export default ItemCount
+export default Item
