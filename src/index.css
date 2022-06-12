@@ -30,6 +30,13 @@ body {
   background-color: #4a4e69 !important;
 }
 
+.btn:hover{
+  background-color: var(--bten-hover-color) !important;
+  color: var(--nav-color)!important;
+  border: 0 !important;
+}
+
+
 .nav-card-qt {
   color: var(--nav-active-color);
   padding-top: 10px;
@@ -89,7 +96,7 @@ p {
   transition: 0.2s;
 }
 
-.card-size{
+.card-size {
   width: 20rem;
   margin-left: auto;
   margin-right: auto;
@@ -98,41 +105,118 @@ p {
   color: var(--nav-color);
 }
 
-.card-size img{
+.card-size img {
   height: 12rem;
   width: 18rem;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 0.5rem;
-  
+
 }
 
-.card-title{
+.card-title {
   color: var(--nav-active-color);
   font-size: 1.2rem;
   text-align: center;
 }
 
 .input-size {
-  width: 5rem !important; 
+  width: 5rem !important;
 }
 
-.card-btn{
+.card-btn {
   background-color: var(--nav-active-color);
   border: none;
   height: 2rem;
 }
-.card-btn:hover{
+
+.card-btn:hover {
   background-color: var(--bten-hover-color);
   color: var(--nav-active-color);
-  transition: 0.2s;
-}
+};
 
 .btn-add {
   justify-items: center;
 }
 
-.card-btn-cart{
-  background-color: var(--nav-color)
+.card {
+  border-width: 0;
+}
+
+.card-btn-cart {
+  background-color: var(--nav-color);
+}
+
+.card-style {
+  width: 80rem;
+}
+
+.img-detail {
+  width: 100%;
+  height: 100%;
+}
+
+.container-detail {
+  padding-bottom: 2rem;
+}
+
+.card-title-detail {
+  color: var(--background-color);
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding-bottom: 1rem;
+}
+
+.card-detail {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0 50px;
+}
+
+.price-detail {
+  padding-top: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.stock-detail {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.btn-detail {
+  justify-content: center;
+}
+
+.cat-a a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  color: var( --nav-color);
+}
+
+.cat-a a:hover{
+  color: var(--nav-active-color);
+  transition: 0.5s !important;
+}
+
+.footer-bc {
+  background-color: var(--background-color);
+  height: 20vh;
+}
+
+.footer-bc p {
+  color: var(--nav-active-color);
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.carousel-txt{
+  text-shadow: 1px 2px 2px black;
 }

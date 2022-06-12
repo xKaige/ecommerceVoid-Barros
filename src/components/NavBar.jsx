@@ -3,7 +3,7 @@ import CartWidget from "./CartWidget";
 
 function NavBar({ cantidad }) {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav-tipografia">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav-tipografia sticky-top">
             <div className="container-fluid">
                 <a className="navbar-brand ms-5 logoEstilo" href="/">V<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" className="bi bi-circle-fill" viewBox="0 0 25 22">
                     <circle cx="10" cy="8" r="8" />

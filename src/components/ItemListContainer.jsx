@@ -9,10 +9,10 @@ function ItemListContainer( { onAdd, sumarCarrito }) {
 
     useEffect(() => {
         setTimeout(()=>{
-            fetch("https://api.rawg.io/api/games?page=1&page_size=10&key=75c173d0dedd439c87e43009cc9c3923")
+            fetch("juegos.json")
                 .then(res => res.json())
                 .catch(error => console.error("Error", error))
-                .then( body => { setJuegoList(body.results)} )
+                .then( body => { setJuegoList(body)} )
         }, 2000)
 
     }, [])
@@ -27,4 +27,6 @@ function ItemListContainer( { onAdd, sumarCarrito }) {
 
 export default ItemListContainer
 
+
+// https://api.rawg.io/api/games?page=2&page_size=10&key=75c173d0dedd439c87e43009cc9c3923
 

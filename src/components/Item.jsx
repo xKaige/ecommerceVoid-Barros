@@ -5,47 +5,47 @@ function Item({ inicial, onAdd, max, agregarCantidad, nombre, imagen, id }) {
 
     const [count, setCount] = useState(inicial)
     const [stock, setStock] = useState(max)
-    
-         const sumar = () =>{
-            count < max ? setCount ( count + 1 ) : alert("No puedes agregar mas productos")
 
-        }
-    
-        const restar = () => {
-            count > inicial ? setCount ( count - 1 ) : alert("Agregue productos por favor")
+    const sumar = () => {
+        count < max ? setCount(count + 1) : alert("No puedes agregar mas productos")
 
-        }
-    
-        const reset = () => {
-            setCount(inicial)
-        }
+    }
 
-        const restarStock = () => {
-           stock >= count ? setStock ( stock - count ) : console.log("No hay stock de este producto")
-        }
+    const restar = () => {
+        count > inicial ? setCount(count - 1) : alert("Agregue productos por favor")
 
-        const validarCantidadSumar = () => {
-            return count + 1 > stock;
-        }
-        const validarCantidadAgregar = () => {
-            return count > stock;
-        }
+    }
 
-        const ValidarStock = () => {
-            if (stock <= 20 && stock!==0){
-                restarStock()
-                onAdd(count)
-                agregarCantidad(count)
-                reset()
-            } if ( stock === 0){     
-                Swal.fire({
-                    title: `No hay mas stock de este producto`,
-                    icon: 'error',
-                    confirmButtonText: 'Aceptar'
-                  })
-            };
-        }
-        
+    const reset = () => {
+        setCount(inicial)
+    }
+
+    const restarStock = () => {
+        stock >= count ? setStock(stock - count) : console.log("No hay stock de este producto")
+    }
+
+    const validarCantidadSumar = () => {
+        return count + 1 > stock;
+    }
+    const validarCantidadAgregar = () => {
+        return count > stock;
+    }
+
+    const ValidarStock = () => {
+        if (stock <= 20 && stock !== 0) {
+            restarStock()
+            onAdd(count)
+            agregarCantidad(count)
+            reset()
+        } if (stock === 0) {
+            Swal.fire({
+                title: `No hay mas stock de este producto`,
+                icon: 'error',
+                confirmButtonText: 'Aceptar'
+            })
+        };
+    }
+
 
     return (
         <>
@@ -62,6 +62,7 @@ function Item({ inicial, onAdd, max, agregarCantidad, nombre, imagen, id }) {
                     </div>
                     <div className="d-flex gap-3 justify-content-center mt-1">
                         <button onClick={() => { ValidarStock() }} type="button" className="btn card-btn-cart mt-3 btn-sm btn-add" disabled={validarCantidadAgregar()}>Agregar al Carrito</button>
+                        <button type="button" className="btn card-btn-cart mt-3 btn-sm btn-add">Examinar</button>
                     </div>
                 </div>
             </div>
