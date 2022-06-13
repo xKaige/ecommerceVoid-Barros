@@ -17,6 +17,11 @@ const ItemDetail = ({ title, detail, img, stock, price }) => {
                     <p className="card-text card-detail mt-3">{detail}</p>
                     <p className="card-text price-detail">PRECIO: ${price}</p>
                     <p className="card-text stock-detail">Hay {stock} productos en stock</p>
+                    <div className="d-flex gap-3 justify-content-center mt-3">
+                        <button  type="button" className="btn card-btn">-</button>
+                        <h2>1 </h2>
+                        <button type="button" className=" btn card-btn">+</button>
+                    </div>
                     <button type="button" className="btn card-btn-cart d-grid gap-2 col-3 mx-auto mt-5">Agregar al Carrito</button>
                   </div>
                 </div>
