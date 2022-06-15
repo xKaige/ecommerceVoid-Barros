@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ItemList from "./ItemList"
 
-
-
 function ItemListContainer( { onAdd, sumarCarrito }) {
 
     const [juegoList, setJuegoList] = useState([])

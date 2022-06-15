@@ -1,8 +1,8 @@
-import Swal from 'sweetalert2'
-import { useState } from "react"
-import { Link } from "react-router-dom";
+import Swal from 'sweetalert2';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-function Item({ inicial, onAdd, max, agregarCantidad, nombre, imagen, id, detail, genero }) {
+function CatDisplay({id, nombre, imagen, detail, inicial, max, onAdd, agregarCantidad, genero}){
 
     const [count, setCount] = useState(inicial)
     const [stock, setStock] = useState(max)
@@ -50,8 +50,8 @@ function Item({ inicial, onAdd, max, agregarCantidad, nombre, imagen, id, detail
 
     return (
         <>
-            <div className="card card-size mt-5">
-                <div className="card-body">
+            <div className=" d-inline-block ms-5 card card-size mt-5">
+                <div className="card-body ">
                     <h5 className="card-title fw-bolder"> {nombre} </h5>
                     <span className='fw-bold'>Stock:</span><span> {stock} unidades </span>
                     <div className='card-img-container'>
@@ -77,5 +77,4 @@ function Item({ inicial, onAdd, max, agregarCantidad, nombre, imagen, id, detail
         </>
     )
 }
-
-export default Item
+export default CatDisplay;

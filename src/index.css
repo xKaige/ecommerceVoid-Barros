@@ -220,3 +220,40 @@ p {
 .carousel-txt{
   text-shadow: 1px 2px 2px black;
 }
+
+.card-text-container{
+  height: 30vh; 
+}
+
+
+
+.card-img-container{
+  height: 32vh;
+}
+
+.card-img-container img{
+  height: 30vh;
+}
+
+.carousel-img{
+  height: 80vh;
+}
+.carousel-img img{
+  height: 100%;
+  object-fit: cover ;
+  object-position: 100% 30%
+}
+
+.card-genero-tag{
+  width: 100px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  margin-bottom: 10px !important;
+  margin: auto auto;
+  text-align: center;
+}
+
+.card-genero-span{
+  display: block;
+  margin: 0 auto;
+}

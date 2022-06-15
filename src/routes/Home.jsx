@@ -1,6 +1,6 @@
 import ItemListContainer from '../components/ItemListContainer';
 import Banner from '../components/Banner';
-import Categorias from '../components/Categorias';
+import Categorias from '../components/Categoria';
 import Swal from 'sweetalert2';
 
 

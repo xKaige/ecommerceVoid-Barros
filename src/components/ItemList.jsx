@@ -1,11 +1,16 @@
+
 import Item from "./Item"
 
-function ItemList({juegos, onAdd, sumarCarrito}){
+function ItemList({ juegos, onAdd, sumarCarrito }) {
 
-    return(
+    return (
         <div className=" d-flex flex-wrap">
-          {juegos?.map((juego)=>{
-                return <Item id={juego.id} nombre={juego.title} imagen={juego.img} key={juego.id} inicial={1} max={juego.stock} onAdd={onAdd} agregarCantidad={sumarCarrito} />
+            {juegos?.map((juego) => {
+                return (
+                    <>
+                        <Item id={juego.id} nombre={juego.title} imagen={juego.img} detail={juego.detail} genero={juego.genero} key={juego.id} inicial={1} max={juego.stock} onAdd={onAdd} agregarCantidad={sumarCarrito} />
+                    </>
+                )
             })}
         </div>
     )
