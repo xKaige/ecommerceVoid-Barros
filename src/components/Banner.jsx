@@ -14,10 +14,10 @@ function Banner() {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active carousel-img">
-                        <img src={got} className="d-block w-100" alt="God of War Ragnarok" />
+                        <img src={got} className="d-block w-100" alt="Ghost of Tsushima" />
                         <div className="carousel-caption d-none d-md-block">
-                            <h3>God of War Ragnarok</h3>
-                            <p>Kratos y Atreus se embarcan en una mítica aventura en busca de respuestas y aliados antes de la llegada del Ragnarök.</p>
+                            <h3>Ghost of Tsushima</h3>
+                            <p>Forja un nuevo camino y emplea tácticas de guerra poco convencionales para liberar Tsushima. Desafía a tus enemigos con tu katana, domina el arco para eliminar las amenazas lejanas, aprende tácticas de sigilo para emboscar a los enemigos y explora una nueva historia en la Isla Iki</p>
                         </div>
                     </div>
                     <div className="carousel-item carousel-img">

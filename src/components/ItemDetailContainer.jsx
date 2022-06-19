@@ -13,12 +13,12 @@ function ItemDetailContainer() {
             .then(res => res.json()) 
             .then(productos => { setItemDetail(productos.find(producto => producto.id == id)) }) // Filtro el producto por el id
             .catch(error => console.error("Error", error)) // Si hay error, lo muestro en consola
-        console.log(itemDetail)
-    }, [id]); // Solo se ejecuta cuando el id cambia
+    }, []); // Solo se ejecuta cuando el id cambia
+
 
     return (
-        <>
-            <ItemDetail id={itemDetail.id} title={itemDetail.title} img={itemDetail.img} detail={itemDetail.detail} price={itemDetail.price} stock={itemDetail.stock} />
+        <>           
+            <ItemDetail item={itemDetail} inicial={1} />
         </>
     );
 };
@@ -26,3 +26,14 @@ function ItemDetailContainer() {
 export default ItemDetailContainer;
 
 // {setItemDetail(productos.find(producto => producto.id === id))},  
+
+// id={itemDetail.id} title={itemDetail.title} img={itemDetail.img} detail={itemDetail.detail} price={itemDetail.price} stock={itemDetail.stock}
+
+/*
+
+function restarStock(cantidad, id){
+    const newItem = itemDetail.find(item => item.id == id)
+    newItem.stock = newItem.stock - cantidad
+}
+
+*/

@@ -257,3 +257,61 @@ p {
   display: block;
   margin: 0 auto;
 }
+
+.carrito-color {
+  color: var(--nav-color);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+
+/* CART CSS */
+
+.cart-img{
+  height: 10vh;
+}
+
+.cart-container {
+  background-color: rgb(214, 214, 214, 50%);
+  box-shadow: var(--background-color) 0px 0px 10px;
+  margin-top: 50px;
+  padding: 20px 0;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cart-txt-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cart-img-container{
+  height: 30vh;
+}
+
+.cart-img-container img{
+  height: 30vh;
+  display: block;
+  margin: 0px auto;
+}
+
+.cart-name{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding-bottom: 5px;
+}
+
+.total-container{
+  font-size: 2rem;
+}
+
+.btn-finalizar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}

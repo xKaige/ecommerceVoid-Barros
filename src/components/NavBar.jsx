@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget";
 
+function NavBar() {
 
-function NavBar({ cantidad }) {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav-tipografia sticky-top">
             <div className="container-fluid">
@@ -24,11 +24,8 @@ function NavBar({ cantidad }) {
                         <Link to="/Contacto" className="nav-tipografia nav-link">Contacto</Link>
                         </li>
                         <li className="nav-item ps-5">
-                            <a className="nav-link prueba" href="/"><CartWidget /></a>
-                        </li>
-                        <li className="nav-item">
-                            <p className="nav-card-qt">{ cantidad }</p>
-                        </li>
+                         <Link to="/Cart" className="carrito-color d-flex gap-3"><CartWidget /> </Link>
+                        </li>                        
                     </ul>
 
                 </div>
