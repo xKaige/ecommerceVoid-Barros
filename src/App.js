@@ -3,10 +3,11 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./index.css";
 import NavBar from "./components/NavBar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Footer from "./routes/footer";
 import Home from "../src/routes/Home";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import CategoriaDetail from "./components/CategoriaDetail";
-import Contactos from "./routes/Contactos";
+import Contactos from "./routes/contactos";
 import Nosotros from "./routes/Nosotros";
 import MyProvider from "./Context/CartContext";
 import CartContainer from "./components/CartContainer";
@@ -25,7 +26,7 @@ function App() {
             <Route path="/Contacto" element={<Contactos />} />
             <Route path="/Cart" element={<CartContainer />} />
           </Routes>
-
+          <Footer />
         </MyProvider>
       </BrowserRouter>
     </>
