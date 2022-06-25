@@ -3,7 +3,6 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./index.css";
 import NavBar from "./components/NavBar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Footer from "../src/routes/Footer";
 import Home from "../src/routes/Home";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import CategoriaDetail from "./components/CategoriaDetail";
