@@ -17,7 +17,7 @@ function Item({ nombre, imagen, id, detail, genero, stock }) {
             <div className="hero-ex-stc">
                 <Link to={"/producto/" + id } ><button type="button" className="btn card-btn-cart mt-3 btn-sm btn-add btn-examinar">Examinar</button></Link>
             <div className="hero-bar-stc">
-                <div className="prod-stock"> Stock: {stock} </div>
+                <div className="prod-stock"> Stock: { stock } </div>
             </div>
             </div>
           </div>

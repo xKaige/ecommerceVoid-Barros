@@ -34,9 +34,11 @@ function CategoriaDetail({ sumarCarrito }) {
       <>
         <Banner />        
         <Categorias />
+        <div className="d-flex gap-5 mb-5 justify-content-center">
         {productos.map((producto) => (
           <CatDisplay id={producto.id} nombre={producto.title} genero={producto.genero} imagen={producto.img} key={producto.id} detail={producto.detail} inicial={1} max={producto.stock} onAdd={onAdd} agregarCantidad={sumarCarrito}/>
         ))}
+        </div>
       </>
     );
   }
