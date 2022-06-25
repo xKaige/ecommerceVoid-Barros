@@ -24,9 +24,9 @@ function App() {
             <Route path="/genero/:genero" element={<CategoriaDetail />} />
             <Route path="/Nosotros" element={<Nosotros />} />
             <Route path="/Contacto" element={<Contactos />} />
-            <Route path="/Cart" element={<CartContainer /> } />
+            <Route path="/Cart" element={<CartContainer />} />
           </Routes>
-          <Footer />
+
         </MyProvider>
       </BrowserRouter>
     </>
