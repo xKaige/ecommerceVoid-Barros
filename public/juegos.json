@@ -3,7 +3,7 @@
       "id": "00",
       "title": "Final Fantasy XVI",
       "img": "https://live.staticflickr.com/65535/50542067131_762c2f45e2_o.png",
-      "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus tellus, dapibus vitae risus vitae, fringilla vehicula nunc. In fermentum vestibulum nunc, sit amet vestibulum orci ullamcorper ut. Donec vitae elementum nisl. Aliquam ligula sapien, congue a fermentum vel, pulvinar varius turpis. Fusce dictum eleifend congue.",
+      "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus tellus, dapibus vitae risus vitae, fringilla vehicula nunc. ",
       "genero": "rol",
       "price": 5200,
       "stock": 60
@@ -12,7 +12,7 @@
       "id": "01",
       "title": "Elden Ring",
       "img": "https://store-images.s-microsoft.com/image/apps.25322.14537704372270848.6ecb6038-5426-409a-8660-158d1eb64fb0.d230176a-d7a2-4696-ad23-ff53a6e004df",
-      "detail": "EL NUEVO JUEGO DE ROL Y ACCIÓN DE AMBIENTACIÓN FANTÁSTICA. Álzate, Sinluz, y que la gracia te guíe para abrazar el poder del Círculo de Elden y encumbrarte como señor del Círculo en las Tierras Intermedias.",
+      "detail": "El nuevo juego de rol y acción de ambientación fantástica. Álzate, Sinluz, y que la gracia te guíe para abrazar el pdoer del Círculo de Elden",
       "genero": "rol",
       "price": 2600,
       "stock": 50
@@ -21,7 +21,7 @@
       "id": "02",
       "title": "Cyberpunk 2077",
       "img": "https://i.pinimg.com/originals/72/90/9b/72909b2fb3d417629cd587287e145c68.png",
-      "detail": "Cyberpunk 2077 es un RPG de aventura y acción de mundo abierto ambientado en el futuro sombrío de Night City, una peligrosa megalópolis obsesionada con el poder, el glamur y las incesantes modificaciones corporales.",
+      "detail": "Cyberpunk 2077 es un RPG de aventura y acción de mundo abierto ambientado en el futuro sombrío de Night City",
       "genero": "rol",
       "price": 2400,
       "stock": 30
@@ -30,7 +30,7 @@
       "id": "03",
       "title": "Monster Hunter Rise",
       "img": "https://gpstatic.com/acache/53/50/1/us/packshot-d8771974e2482e7a79906467b2212954.jpg",
-      "detail": "¡Acepta el reto y apúntate a la caza! En Monster Hunter Rise, la entrega más reciente de la galardonada y superexitosa serie Monster Hunter, te convertirás en cazador, explorarás mapas nuevos y usarás muchas armas diferentes para acabar con monstruos temibles en una historia totalmente nueva. La versión para PC también incluye montones de optimizaciones visuales y de mejora del rendimiento adicionales.",
+      "detail": "¡Acepta el reto y apúntate a la caza! En Monster Hunter Rise, la entrega más reciente de la galardonada y superexitosa serie Monster Hunter.",
       "genero": "rol",
       "price": 1400,
       "stock": 25
@@ -39,7 +39,7 @@
       "id": "04",
       "title": "Metal Gear Rising",
       "img": "https://img.g2a.com/323x433/1x1x0/metal-gear-rising-revengeance-steam-key-north-america/5c04d2e55bafe3d6cf743da2",
-      "detail":"Developed by Kojima Productions and PlatinumGames, METAL GEAR RISING: REVENGEANCE takes the renowned METAL GEAR franchise into exciting new territory with an all-new action experience. The game seamlessly melds pure action and epic story-telling that surrounds Raiden – a child soldier transformed into a half-human, half-cyborg ninja who uses his High Frequency katana blade to cut through any thing that stands in his vengeful path!",
+      "detail":"Developed by Kojima Productions and PlatinumGames, METAL GEAR RISING: REVENGEANCE takes the renowned METAL GEAR franchise into exciting new territory ",
       "genero": "Accion",
       "price": 1000,
       "stock": 12
@@ -48,7 +48,7 @@
       "id": "05",
       "title": "The Messenger",
       "img": "https://static-cdn.jtvnw.net/ttv-boxart/The%20Messenger.jpg",
-      "detail":"Mientras un ejército demoníaco asedia su aldea, un joven ninja se adentra en un mundo maldito para llevar un pergamino crucial para la supervivencia de su clan. Lo que empieza como un clásico juego de acción y plataformas no tarda en convertirse en una extensa aventura de viajes en el tiempo llena de emoción, sorpresas y humor.",
+      "detail":"Mientras un ejército demoníaco asedia su aldea, un joven ninja se adentra en un mundo maldito para llevar un pergamino crucial para la supervivencia de su clan.",
       "genero": "Aventura",
       "price": 800,
       "stock": 35
@@ -56,8 +56,8 @@
     {
       "id": "06",
       "title": "Forza Horizon 5",
-      "img": "https://www.gtplanet.net/wp-content/uploads/2021/08/ForzaHorizon5_KeyArt_Horiz_RGB_Final.jpg",
-      "detail":"¡Tu aventura definitiva en Horizon te espera! Explora paisajes dinámicos y en constante evolución del mundo abierto de México con una acción de conducción ilimitada y divertida en cientos de los mejores coches del mundo.",
+      "img": "https://pbs.twimg.com/media/E4a9GMUWYAkGeue?format=jpg&name=large",
+      "detail":"¡Tu aventura definitiva en Horizon te espera! Explora paisajes dinámicos y en constante evolución del mundo abierto de México",
       "genero": "Carrera",
       "price": 1000,
       "stock": 63
@@ -66,7 +66,7 @@
       "id": "07",
       "title": "Dying Light 2",
       "img": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_DyingLight2StayHuman_Techland_S4_1200x1600-b3d66b4576fd6488b674710e13493435",
-      "detail":"Despierta siendo un vampiro debilitado tras siglos de letargo. Parte de cacería en busca de sangre para recuperar tu fuerza, a la par vez que te escondes de la abrasadora luz solar. Reconstruye tu castillo y transforma a humanos en tus leales sirvientes en una misión para alzar tu imperio vampírico. Haz aliados o enemigos jugando en linea o juega sólo, desafiando a soldados sagrados y batallando en la guerra de un mundo sumido en conflicto.",
+      "detail":"Despierta siendo un vampiro debilitado tras siglos de letargo. Parte de cacería en busca de sangre para recuperar tu fuerza, a la par vez que te escondes de la abrasadora luz solar",
       "genero": "Accion",
       "price": 3400,
       "stock": 8
@@ -75,7 +75,7 @@
       "id": "08",
       "title": "Final Fantasy XIV Online",
       "img": "https://sm.ign.com/ign_es/cover/f/final-fant/final-fantasy-xiv-online-endwalker_wr1h.jpg",
-      "detail":"Forma parte de un alucinante viaje en un increíble FINAL FANTASY en constante evolución mientras emprendes aventuras y exploras el mundo con amigos de todo el mundo. Con este producto también podrás jugar a FINAL FANTASY® XIV: A Realm Reborn y al pack de expansión FINAL FANTASY® XIV: HEAVENSWARD.",
+      "detail":"Forma parte de un alucinante viaje en un increíble FINAL FANTASY en constante evolución mientras emprendes aventuras y exploras el mundo con amigos de todo el mundo.",
       "genero": "rol",
       "price": 3400,
       "stock": 25

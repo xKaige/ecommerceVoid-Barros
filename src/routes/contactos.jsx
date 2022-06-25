@@ -4,7 +4,7 @@ function Contactos() {
   return (
     <>
       <div className="container">
-        <div className="row">
+        <div className="row contacto-txt">
           <div className="col-lg-6 mt-5">
             <h2 className="fw-bold"> Escribinos! </h2>
             <p>

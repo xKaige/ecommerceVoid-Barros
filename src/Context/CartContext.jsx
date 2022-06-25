@@ -10,8 +10,7 @@ const MyProvider = ({ children }) => {
   // Agrega un producto al carrito sin repetir
   const addItem = (item, count) => {
     const newItem = {
-      ...item,
-      count,
+      ...item, count,
     };
 
     if (inCart(newItem.id)) {
@@ -24,6 +23,8 @@ const MyProvider = ({ children }) => {
       setCart([...cart, newItem]);
     }
   };
+
+  
 
   // Detecta si el producto ya esta en el carrito TRUE / FALSE
   const inCart = (id) => {

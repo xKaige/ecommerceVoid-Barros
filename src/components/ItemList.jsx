@@ -4,7 +4,7 @@ import Item from "./Item"
 function ItemList({ juegos, onAdd, sumarCarrito }) {
 
     return (
-        <div className=" d-flex flex-wrap">
+        <div className=" d-flex flex-wrap justify-content-center gap-5 mb-5">
             {juegos?.map((juego) => {
                 return (
                     <>
