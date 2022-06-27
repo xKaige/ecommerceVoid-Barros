@@ -56,25 +56,15 @@ const ItemDetail = ({ item, inicial }) => {
         <div className="row">
           <div className="col-12 col-sm-6 pt-5">
             <Link to="/" className=" nav-tipografia nav-link active">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                fill="currentColor"
-                className="bi bi-arrow-left-short"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                <path fillRule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
               </svg>
               Volver al Home
             </Link>
             <div className="card mb-3 card-style">
               <div className="row g-0">
-                <div className="col-md-4">
-                  <img src={img} className="img-fluid img-detail" />
+                <div className="col-md-4 col-sm-5">
+                  <img src={img} className="img img-detail" />
                 </div>
                 <div className="col-md-8 col-sm-6 pt-5">
                   <div className="card-body">

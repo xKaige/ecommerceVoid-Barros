@@ -198,11 +198,15 @@ p {
   font-weight: 600;
   letter-spacing: 0.1rem;
   text-decoration: none;
-  color: var( --nav-color);
+  color: #ffff;
+  background-color: #527586;
+  border-radius: 20px;
+  padding: 2px 10px;
+  text-align: center;
 }
 
 .cat-a a:hover{
-  color: var(--nav-active-color);
+  color: #f1faee !important;
   transition: 0.5s !important;
 }
 
@@ -224,8 +228,6 @@ p {
 .card-text-container{
   height: 30vh; 
 }
-
-
 
 .card-img-container{
   height: 32vh;
@@ -267,6 +269,48 @@ p {
 
 /* CART CSS */
 
+.cart-btn{
+  width: 2rem;
+}
+.cart-btn-ele, .cart-btn-agr{
+  color: #ffff;
+  border: hidden;
+  width: 5rem;
+  border-radius: 20px;
+}
+
+.btn-elm-item{
+  background-color: #c1121f;
+  border: hidden;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 20px;
+}
+
+.cart-btn-agr{
+  background-color: #06d6a0;
+  border-radius: 20px;
+}
+
+.cart-btn-ele{
+  background-color: #ef233c;
+  border-radius: 20px;
+}
+
+.btn-restar{
+  background-color: #ef476f;
+  color: #ffff;
+  border: hidden;
+  border-radius: 20px;
+}
+
+.btn-sumar{
+  background-color: #06d6a0;
+  color: #ffff;
+  border: hidden;
+  border-radius: 20px;
+}
+
 .cart-img{
   height: 10vh;
 }
@@ -287,12 +331,14 @@ p {
   flex-direction: column;
 }
 
-.cart-img-container{
-  height: 30vh;
+.cart-background{
+  background-color: #162133;
+  color: var(--nav-active-color);
+  padding-bottom: 10px;
 }
 
 .cart-img-container img{
-  height: 30vh;
+  height: 10vh;
   display: block;
   margin: 0px auto;
 }
@@ -307,6 +353,7 @@ p {
 
 .total-container{
   font-size: 2rem;
+  color: #ffff
 }
 
 .btn-finalizar{
@@ -319,7 +366,6 @@ p {
 .carousel-fx{
   box-shadow: 0 0.2rem 2rem #527586;
 }
-
 
 /* PRUEBA HERO */
 
@@ -456,7 +502,37 @@ p {
   background-color: rgba(38, 30, 71, 0.7)
 }
 
-.prod-stock{
+.prod-price{
   color: #fff;
   opacity: 1;
+  padding-right: 25px;
+  text-align: right;
 }
+
+.background-cart{
+  background-color: #162133;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--nav-active-color)
+}
+
+.background-cart h2 {
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.btn-cart-empty{
+  margin-top: 50px;
+  background-color: var(--card-shadow-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline;
+}
+
+.btn-cart-empty:hover{
+  background-color: #625d80;
+}
+

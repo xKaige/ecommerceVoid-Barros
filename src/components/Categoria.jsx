@@ -5,7 +5,7 @@ function Categorias() {
     <>
       <div className="container">
         <div className="row">
-          <div className="col-lg-12 col-ms-12 d-flex gap-5 mt-5 justify-content-center cat-a mb-5">
+          <div className="col-lg-12 col-ms-12 d-flex flex-wrap gap-5 mt-5 justify-content-center cat-a mb-5">
             <Link to={"/genero/accion"}> Accion </Link>
             <Link to={"/genero/aventura"}> Aventura </Link>
             <Link to={"/genero/rol"}> Rol </Link>

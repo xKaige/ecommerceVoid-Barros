@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Item({ nombre, imagen, id, detail, genero, stock }) {
+function Item({ nombre, imagen, id, detail, genero, precio }) {
   return (
     <>
       <div className="hero-container">
@@ -17,7 +17,7 @@ function Item({ nombre, imagen, id, detail, genero, stock }) {
             <div className="hero-ex-stc">
                 <Link to={"/producto/" + id } ><button type="button" className="btn card-btn-cart mt-3 btn-sm btn-add btn-examinar">Examinar</button></Link>
             <div className="hero-bar-stc">
-                <div className="prod-stock"> Stock: { stock } </div>
+                <div className="prod-price"> Precio: ${ precio } </div>
             </div>
             </div>
           </div>
