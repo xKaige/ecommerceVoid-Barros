@@ -2,8 +2,8 @@ import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../Context/CartContext";
 
-const ItemDetail = ({ item, inicial }) => {
-  const { title, detail, img, price, id } = item;
+const ItemDetail = ({ item, inicial }) => { // item es el producto
+  const { title, detail, img, price, id } = item; // destructuracion
 
   const { inCart, addItem, getItemQty } = useContext(CartContext);
   const [count, setCount] = useState(inicial);

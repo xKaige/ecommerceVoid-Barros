@@ -20,7 +20,7 @@ function App() {
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Producto/:id" element={<ItemDetailContainer />} />
+            <Route path="producto/:id" element={<ItemDetailContainer />} />
             <Route path="/genero/:genero" element={<CategoriaDetail />} />
             <Route path="/Nosotros" element={<Nosotros />} />
             <Route path="/Contacto" element={<Contactos />} />

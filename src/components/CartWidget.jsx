@@ -8,9 +8,11 @@ function CartWidget() {
   return (
     <>
       <BsCart2 size={22} />
-      <div> {getItemQty()}</div>
+      { getItemQty() >= 1 ? <div>{getItemQty()}</div> : null }
+
     </>
   );
 }
 
 export default CartWidget;
+
