@@ -2,7 +2,7 @@ function Nosotros() {
   return (
     <>
       <div className="container">
-        <div className="row">
+        <div className="row nosotros-container">
           <div className="col-lg-4 mt-5"></div>
           <div className="col-lg-4 mt-5">
             <div>

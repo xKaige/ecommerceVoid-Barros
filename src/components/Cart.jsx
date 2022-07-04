@@ -6,6 +6,8 @@ const Cart = ({ nombre, imagen, precio, deleteItem, id, cantidad, inicial }) => 
   const { upDateItemPrice  } = useContext(CartContext);
   const [ input, setInput ] = useState(inicial)
   const [ cant, setCant ] = useState(cantidad)
+  
+  
 
   // SUMA O RESTA EL INPUT 
    const sumar = () => {

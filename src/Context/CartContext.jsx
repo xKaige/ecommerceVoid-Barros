@@ -1,11 +1,16 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 export const CartContext = createContext();
 
 const { Provider } = CartContext;
 
 const MyProvider = ({ children }) => {
-  const [cart, setCart] = useState([]);
+  
+  const [cart, setCart] = useState(JSON.parse(localStorage.getItem('productos')) ?? []);
+  
+  useEffect(() => {
+    localStorage.setItem('productos', JSON.stringify(cart));
+}, [cart]);
 
   // Agrega un producto al carrito sin repetir
   const addItem = (item, count) => {

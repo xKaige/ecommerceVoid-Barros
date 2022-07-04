@@ -24,6 +24,7 @@ code {
 * {
   margin: 0;
   padding: 0;
+  
 }
 
 body {
@@ -536,3 +537,48 @@ p {
   background-color: #625d80;
 }
 
+.prueba{
+  color: white;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #ffff;
+  font-weight: 600;
+}
+
+.form-submit{
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #625d80;
+  font-weight: 700;
+  color: #fff;
+  width: 30%;
+  align-self: center;
+}
+
+.form-title{
+  text-align: center;
+  color: #ffff;
+}
+
+.form-info-display{
+  color: #fff;
+}
+
+button:disabled{
+  background-color: #8985a1;
+  color: #162133;
+}
+
+.form-container{
+  min-height: 80vh;
+}
+
+.nosotros-container{
+  min-height: 80vh;
+}
