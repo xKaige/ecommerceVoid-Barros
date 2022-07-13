@@ -1,11 +1,31 @@
-import got from "../img/got.png"
-import horizon from "../img/hrfb.png"
-import xbc from "../img/xbc3.jpg"
-
+import got from "../img/got.png";
+import horizon from "../img/hrfb.png";
+import xbc from "../img/xbc3.jpg";
 
 function Banner() {
-    return (
-        <>
+  return (
+    <>
+      <section className="hero-home-container">
+        <div className="hero-container">
+          <div className="hero-txt">
+            <h2 className="hero-h">Be greater. Be yourself</h2>
+            <p className="hero-p">
+              Experimenta el ascenso de Miles Morales y sé testigo de cómo el
+              nuevo héroe domina nuevos poderes increíbles y explosivos para
+              convertirse en su propia versión de Spider-Man.
+            </p> 
+            <button className="hero-btn">Proximamente</button>           
+          </div>
+        </div>
+        <div className="hero-footer"/>
+      </section>
+    </>
+  );
+}
+
+export default Banner;
+
+/* 
             <div id="carouselExampleCaptions" className="carousel slide carousel-txt carousel-fx " data-bs-ride="false">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -45,9 +65,6 @@ function Banner() {
                     <span className="visually-hidden">Siguiente</span>
                 </button>
             </div>
-        </>
-    )
 
-}
 
-export default Banner;
+*/

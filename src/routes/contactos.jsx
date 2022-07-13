@@ -33,7 +33,7 @@ function Contactos() {
                     <div className="mb-3">
                         <label for="exampleFormControlTextarea1" className="form-label fw-bold" required> Su comentario por favor </label>
                         <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        <button type="submit" className="btn btn-primary mt-3"> Enviar  </button>
+                        <button type="submit" className="btn btn-primary contacto-btn mt-3"> Enviar  </button>
                     </div>
                 </div>
             </form>

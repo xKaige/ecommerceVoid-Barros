@@ -26,7 +26,7 @@ function CategoriaDetail({ sumarCarrito }) {
 
     return (
       <>
-        <Banner />        
+    
         <Categorias />
         <div className="d-flex gap-5 mb-5 justify-content-center flex-wrap">
           {productos.map((producto) => (
@@ -44,7 +44,7 @@ export default CategoriaDetail;
 
 /* 
 
-
+        <Banner />    
 
 
 */

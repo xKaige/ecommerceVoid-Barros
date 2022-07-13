@@ -3,8 +3,21 @@ import CartWidget from "./CartWidget";
 
 function NavBar() {
 
+    let scroll = window.pageXOffset;
+    window.onscroll = function() {
+
+        let scrollActual = window.pageYOffset;
+        if(scroll > scrollActual) {
+            document.getElementById("scroll").style.top ="0";
+        } else {
+            document.getElementById("scroll").style.top ="-100px";
+        }
+        scroll = scrollActual;
+    }
+
+
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav-tipografia sticky-top">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav-tipografia sticky-top" id="scroll">
             <div className="container-fluid">
                 <a className="navbar-brand ms-5 logoEstilo" href="/">V<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" className="bi bi-circle-fill" viewBox="0 0 25 22">
                     <circle cx="10" cy="8" r="8" />
@@ -13,7 +26,7 @@ function NavBar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul className="navbar-nav gap-4 mt-2 align-items-center">
+                    <ul className="navbar-nav gap-4 mt-2 align-items-center nav-contenedor">
                         <li className="nav-item">
                             <Link to="/" className="nav-tipografia nav-link">Home</Link>
                         </li>

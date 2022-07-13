@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import "./index.css";
+// import "./index.css";
+import "./css2.css";
 import NavBar from "./components/NavBar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./routes/footer";

@@ -13,7 +13,7 @@ code {
 }
 
 :root {
-  --background-color: #182235;
+  --background-color: #000E1D;
   --background-shadow-color: #2f2f4b;
   --card-shadow-color: #383157;
   --nav-color: #a8dadc;
@@ -28,7 +28,7 @@ code {
 }
 
 body {
-  background-color: #293241 !important;
+  background-color: var(--background-color) !important;
 }
 
 .btn:hover{
@@ -52,9 +52,11 @@ body {
   box-shadow: -1px 6px var(--background-shadow-color) !important;
 }
 
+
 .nav-tipografia {
   font-size: 1.1rem;
   font-family: 'Josefin Sans', sans-serif;
+  background-color: rgba(0,0,0,0) !important;
 }
 
 .logoEstilo {
@@ -370,7 +372,7 @@ p {
 
 /* PRUEBA HERO */
 
-.hero-container {
+.hero-container-item {
   width: 300px;
   height: 450px;
   overflow: hidden;
@@ -581,4 +583,10 @@ button:disabled{
 
 .nosotros-container{
   min-height: 80vh;
+}
+
+.form-error{
+  color: red;
+  font-size: 0.8rem;
+  text-align: center;
 }
