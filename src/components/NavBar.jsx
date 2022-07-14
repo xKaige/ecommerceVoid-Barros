@@ -3,9 +3,11 @@ import CartWidget from "./CartWidget";
 
 function NavBar() {
 
+    // ANIMACION SCROLL
+    
     let scroll = window.pageXOffset;
+    
     window.onscroll = function() {
-
         let scrollActual = window.pageYOffset;
         if(scroll > scrollActual) {
             document.getElementById("scroll").style.top ="0";

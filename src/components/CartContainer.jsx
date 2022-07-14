@@ -1,8 +1,9 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { CartContext } from "../Context/CartContext";
 import { Link } from 'react-router-dom';
-import Cart from "./Cart";
 import Formulario from './Formulario';
+import Cart from "./Cart";
+import holdUp from "../img/holdup.png";
 
 
 function CartContainer() {
@@ -18,14 +19,12 @@ function CartContainer() {
                 {cart.map((juego) => <Cart  id={juego.id} nombre={juego.title} imagen={juego.img} key={juego.id} precio={juego.price} deleteItem={deleteItem} cantidad={juego.count} stock={juego.stock} inicial={1} />)}
             </div>          
           </div>
-          <div className="row text-center">
-            <div className="col-4 mt-5"></div>
-              <div className="col-6 mt-5">
-                <div className="total-container"> <span className="fw-bold">Total de la compra:</span> $ { getItemPrice() }</div>
-
-              {/* CHECKOUT */}
-                <Formulario />
-              {/* CHECKOUT */}                        
+          <div className="row text-center ">
+              <div className="col-12 mt-5">
+                <div className="total-container mb-5"> 
+                  <span className="fw-bold total-compra">Total de la compra: $ { getItemPrice() }</span>
+                </div>
+                <Formulario/> 
             </div>
           </div>
         </div>
@@ -34,9 +33,9 @@ function CartContainer() {
         <div className="container">
           <div className="row justify-content-evenly">
             <div className="col-lg-8 background-cart">
-              <h2>No hay un producto agregado <br />
-              Volver y agrega productos al carrito!</h2>
-              <Link to="/" className=" nav-tipografia nav-link active btn-cart-empty">Volver</Link>
+            <img className="cart-cont-img" src={holdUp} />
+              <h2>Ups!! No hay productos en tu carrito!</h2>
+              <Link to="/" className="btn-cart-empty">Volver</Link>
             </div>
           </div>
         </div>

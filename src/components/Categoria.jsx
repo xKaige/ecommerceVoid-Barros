@@ -8,7 +8,7 @@ function Categorias() {
         <div className="col-lg-1"></div>
           <div className="col-lg-10 col-ms-4 d-flex flex-wrap mt-5 cat-a mb-5">
             <h3 className="cat-h3">Generos:</h3>
-            <Link to={"/genero/accion"} className="cat-link cat-accion"> Accion </Link>
+            <Link to={"/genero/accion"} className="cat-link"> Accion </Link>
             <span>/</span>
             <Link to={"/genero/aventura"} className="cat-link"> Aventura </Link>
             <span>/</span>
@@ -16,7 +16,7 @@ function Categorias() {
             <span>/</span>
             <Link to={"/genero/carrera"} className="cat-link"> Carrera </Link>
             <span>/</span>
-            <Link to={"/"} className="cat-link"> Reset </Link>
+            <Link to={"/"} className="cat-reset"> Reset </Link>
           </div>
           <div className="col-lg-2"></div>
         </div>

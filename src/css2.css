@@ -62,13 +62,24 @@ body{
     color: #ffff;
 }
 
-.cat-link{
+.cat-link, .cat-reset{
     padding: 0;
     text-decoration: none;
     color: #ffff;
     padding-left: 10px;
     padding-right: 20px;
     transition: 0.2s;
+}
+
+.cat-reset{
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fb5607;
+    transition: 0.2s;
+}
+
+.cat-reset:hover{
+    color: #fb4007;
 }
 
 .cat-link:hover{
@@ -84,7 +95,7 @@ body{
     top: -100px;
     width: 100%;
     height: 100vh;
-    background: url(./img/spidermanMM.jpg) no-repeat center / cover;
+    background: url(./img/MM.jpg) no-repeat 80% / cover;
 }
 
 .hero-container{
@@ -277,7 +288,7 @@ body{
 
  .footer-bc{
     width: 100%;
-    height: 13vh;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -316,3 +327,238 @@ body{
  .contacto-btn:hover{
     background-color: #fb4007
  }
+
+/* CART DISPLAY */
+
+.background-cart{
+    min-height: 80vh;
+    background-color: #010a14;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    color: #ffff;
+}
+
+.cart-cont-img{
+    width: 50%;
+}
+
+.btn-cart-empty{
+    background-color: #fb5607;
+    color: #fff;
+    font-style: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 12px;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.btn-cart-empty:hover{
+    background-color: #fb4007;
+    color: #fff;
+
+}
+
+
+/* DETAIL */
+
+.detail-cart-container{
+  align-items: end;
+  display: flex;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.detail-container img{
+  display: block;
+  margin: auto;
+}
+
+.detail-img{
+  height: 90%;
+}
+
+.detail-styles{
+  color: #fff;
+  max-height: 75vh;
+}
+
+.detail-title{
+  font-weight: 600;
+  font-size: 3.1rem;  
+}
+
+.detail-detail{
+  font-size: 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.detail-btn{
+  background-color: rgb(0,0,0,0);
+  color: #ffff;
+  border: none;
+  padding: 0 50px;
+  font-size: 2rem;
+}
+
+.count-display{
+  font-size: 2rem;
+}
+
+.detail-carrito{
+  background-color: #fb5607;
+  border: none;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 0 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 1.3rem;
+}
+
+.detail-finalizar{
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.detail-carrito:hover, .detail-finalizar:hover{
+  background-color: #fb4007;
+  transition: 0.2s;
+}
+
+
+/* CART */
+
+.cart-contenedor{
+  justify-content: center;
+  color: #fff;
+}
+
+.total-compra{
+  color: #fff;
+  font-size: 2rem;
+}
+
+.btn-elm-item{
+  background-color: #fb5607;
+  color: #fff;
+  font-style: none;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 12px;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.btn-elm-item:hover{
+  background-color: #fb4007;
+
+}
+
+/* FORMULARIO */
+
+.error-msg{
+  color: red !important;
+}
+
+.formulario{
+  text-align: center;
+}
+
+label {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-right: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.field-input {
+  width: 300px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.form-email{
+  margin-left: 15px;
+}
+
+.form-subtmit{
+  background-color: #fb5607;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+
+.form-subtmit:hover{
+  background-color: #fb4007;
+}
+
+@media screen and (max-width: 768px){
+  .hero-txt{
+    margin-left: 50px;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 1rem;
+  }
+  .hero-h{
+    font-size: 1.5rem;
+  }
+  .hero-p{
+    font-size: 1rem;
+  }
+  .footer-bc p{
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .footer-img{
+    width: 40px;
+    margin-top: 50px;
+  }
+  .footer-bc{
+    height: 18vh;
+  }
+
+}
+
+@media screen and (min-width: 768px){
+  .hero-txt{
+    margin-left: 50px;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 2rem;
+  }
+  .hero-h{
+    font-size: 4rem;
+  }
+  .hero-p{
+    font-size: 1.5rem;
+  }
+  .hero-home-container{
+    background: url(./img/MM.jpg) no-repeat 80% / cover;
+  }
+
+}
+
+@media screen and (min-width: 1024px){
+  .hero-home-container{
+    background: url(./img/MM.jpg) no-repeat 10% / cover;
+  }
+  .hero-txt{
+    margin-left: 10px;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 2rem;
+  }
+  .hero-h{
+    font-size: 3rem;
+  }
+  .hero-p{
+    font-size: 1.5rem;
+  }
+}

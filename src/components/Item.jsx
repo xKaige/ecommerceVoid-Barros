@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 function Item({ nombre, imagen, id, detail, genero, precio }) {
+  
   return (
     <>
     <main>

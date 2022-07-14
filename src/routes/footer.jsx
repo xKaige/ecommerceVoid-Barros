@@ -5,7 +5,7 @@ function Footer(){
         <>
             <div className="container-fluid footer-bc ">
                 <div className="row">
-                    <div className="col-lg-12 col-sm-4">
+                    <div className="col-lg-12 col-sm-12 col-ms-12 col-12">
                         <a href="#">
                             <img src={github} className="footer-img"/>
                         </a>

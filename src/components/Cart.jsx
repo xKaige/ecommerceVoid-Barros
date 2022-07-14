@@ -51,32 +51,25 @@ const Cart = ({ nombre, imagen, precio, deleteItem, id, cantidad, inicial }) => 
   // RETURN 
   return (
     <>
-      <div className="container">
-        <div className="row text-center">
-          <div className="col-2 mt-5">
-            <div className="cart-img-container">
-              <img src={ imagen } alt={ nombre } className="img-fluid" />
+      <div className="container cart-container">
+        <div className="row text-center cart-contenedor">
+            <div className="col-lg-1 col-sm-3 col-9 mt-5">
+              <div className="cart-img-container">
+                <img src={ imagen } alt={ nombre } className="img-fluid" />
+              </div>
             </div>
-          </div>
-          <div className="col-3">
-            <h3 className="mt-5"> { nombre } </h3>
-            <p>
-              <span className="fw-bold">Precio: $</span>{ precio }
+            <div className="col-lg-3 col-sm-3 col-12">
+              <h3 className="mt-5"> { nombre } </h3>
               <p>
-                <span className="fw-bold">Items Agregados:</span> { cant }
+                <span className="fw-bold">Precio: $</span>{ precio }
+                <p>
+                  <span className="fw-bold">Items Agregados:</span> { cant }
+                </p>
               </p>
-            </p>
-          </div>
-          <div className="col-2 mt-5">
-            <button button onClick={()=>{deleteItem(id)}} className="nav-item mt-5 btn-elm-item">Eliminar Articulo</button>
-          </div>
-          <div className="col-5 mt-5 d-flex align-items-end justify-content-around">
-            <button onClick={ restar } className="nav-item mt-5 cart-btn btn-restar">-</button>
-            <span>{ input }</span>
-            <button onClick={ sumar } className="nav-item mt-5 cart-btn btn-sumar">+</button>
-            <button onClick={ agregar } className="nav-item mt-5 cart-btn-agr">Agregar</button>
-            <button onClick={ remover } className="nav-item mt-5 cart-btn-ele">Eliminar</button>
-          </div>
+            </div>
+            <div className="col-lg-2 col-sm-5 col-4 mt-5">
+              <button button onClick={()=>{deleteItem(id)}} className="mt-5 btn-elm-item">Eliminar</button>
+            </div>
         </div>
       </div>
     </>
