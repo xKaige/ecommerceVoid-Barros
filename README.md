@@ -4,7 +4,7 @@
 
 ## Vercel Deploy:
 
-\*[Void-Ecommerce](https://void-barros.vercel.app/)
+[Void-Ecommerce](https://void-barros.vercel.app/)
 
 ## Ecommerce Void
 
@@ -34,5 +34,5 @@ Los productos con sus respectivas ordenes estan almacenados en Firebase para su 
 
 ### Contacto
 
-[Github] (https://github.com/xKaige/ecommerceVoid-Barros)
-[LinkeIn] (https://www.linkedin.com/in/dario-barros-35ba6b30/)
+[Github](https://github.com/xKaige/ecommerceVoid-Barros)
+[LinkeIn](https://www.linkedin.com/in/dario-barros-35ba6b30/)
