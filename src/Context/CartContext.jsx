@@ -2,6 +2,7 @@ import { createContext, useState, useEffect } from "react";
 
 export const CartContext = createContext();
 
+
 const { Provider } = CartContext;
 
 const MyProvider = ({ children }) => {
@@ -22,7 +23,14 @@ const MyProvider = ({ children }) => {
       const findProduct = cart.find((x) => x.id === newItem.id);
       const productIndex = cart.indexOf(findProduct);
       const auxArray = [...cart];
-      auxArray[productIndex].count += count;
+
+      if (auxArray[productIndex].count + count > newItem.stock) {
+          auxArray[productIndex].count = newItem.stock
+        
+    } else { auxArray[productIndex].count += count }
+        
+
+
       setCart(auxArray);
     } else {
       setCart([...cart, newItem]);
@@ -79,27 +87,11 @@ const MyProvider = ({ children }) => {
     setCart(stockModificado)
   };
 
-
   return (
-    <Provider value={{ cart, inCart, addItem, deleteItem, emptyCart, getItemQty, getItemPrice, upDateItemPrice, upDateStock }}> { children } </Provider>  );
+    
+      
+      <Provider value={{ cart, inCart, addItem, deleteItem, emptyCart, getItemQty, getItemPrice, upDateItemPrice, upDateStock }}> { children } </Provider>  );
+    
 };
 
 export default MyProvider;
-
-
-/* 
-
-  const modificarProducto = (producto: Producto) => {
-    const productosNuevos = productos.map(item => {
-      if (item.id === producto.id) {
-        return { ...item, cantidad: producto.cantidad, precio: producto.precio };
-      }
-      return item;
-    });
-    setProductos(productosNuevos);
-  }
-
-  Total: ${productos.reduce((sumar, item) => sumar + item.precioTotal, 0)
-
-
-*/
