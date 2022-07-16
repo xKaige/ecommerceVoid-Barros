@@ -2,6 +2,8 @@
 
 ![GIF](https://media.giphy.com/media/lB0UopdGRFM6LcocE3/giphy.gif)
 
+- Tambien se puede encontrar el gif dentro de la carpeta src/helpers/ con el diseño de la primera version y la actual.
+
 ## Vercel Deploy:
 
 [Void-Ecommerce](https://void-barros.vercel.app/)
