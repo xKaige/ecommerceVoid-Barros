@@ -56,7 +56,7 @@ const ItemDetail = ({ item, inicial }) => { // item es el producto
     <>
         <div className="container ">
           <div className="row">
-              <Link to="/" className=" nav-tipografia nav-link active mt-5">
+              <Link to="/" className=" nav-tipografia detail-volver nav-link active mt-5">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-arrow-left-short" viewBox="0 0 16 16">
                   <path fillRule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
                 </svg>
@@ -66,16 +66,16 @@ const ItemDetail = ({ item, inicial }) => { // item es el producto
                   <div className="col-lg-5 col-ms-5">
                     <img src={img} alt={title} className="img-fluid detail-img" />
                   </div>
-                <div className="col-lg-5 detail-styles">
+                <div className="col-lg-5 col-12 detail-styles">
                   <div className="detail-title">{title}</div>
                   <div className="detail-detail mt-5">{detail}</div>
                   <div className="detail-cart-container d-flex">
-                    <div className="d-flex mt-5">
+                    <div className="d-flex mt-5 detail-botonera">
                       <button onClick={restar} className="detail-btn" > - </button>
                       <div className="botonera align-items-end count-display">{count} </div>
                       <button onClick={sumar} disabled={!enableAdd} className="detail-btn"> + </button>
                       <button onClick={onAdd} className="detail-carrito"> Agregar </button>
-                      { (getItemQty() > 0) ? <button className="detail-carrito "><Link to="/cart" className="detail-finalizar"> Finalizar la compra </Link></button>  : null }
+                        { (getItemQty() > 0) ? <Link to="/cart" className="detail-finalizar detail-carrito"> Finalizar la compra </Link>  : null }
                     </div>
                   </div>
                     <div> <p className="card-text stock-detail mt-3"> Hay {cantidad} productos en stock </p> </div>
@@ -97,49 +97,3 @@ const ItemDetail = ({ item, inicial }) => { // item es el producto
 
 export default ItemDetail;
 
-
-/*
-
-     <div className="container container-detail">
-        <div className="row">
-          <div className="col-12 col-sm-6 pt-5">
-            <Link to="/" className=" nav-tipografia nav-link active">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-arrow-left-short" viewBox="0 0 16 16">
-                <path fillRule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
-              </svg>
-              Volver al Home
-            </Link>
-
-            <div className="card mb-3 card-style">
-              <div className="row g-0">
-                <div className="col-md-4 col-sm-5">
-                  <img src={img} className="img img-detail" />
-                  <img src={img1} className="img img-detail" />
-                  <img src={img2} className="img img-detail" />
-                </div>
-                <div className="col-md-8 col-sm-6 pt-5">
-                  <div className="card-body">
-                    <h5 className="card-title card-title-detail">{title}</h5>
-                    <p className="card-text card-detail mt-3">{detail}</p>
-                    <p className="card-text price-detail">PRECIO: ${price}</p>
-                    <p className="card-text stock-detail">
-                      Hay {cantidad} productos en stock
-                    </p>
-                    <div className="d-flex gap-3 justify-content-center mt-3">
-                      <button type="button" onClick={restar} className="btn card-btn" > - </button>
-                      <h2>{count}</h2>
-                      <button type="button" onClick={sumar} disabled={!enableAdd} className=" btn card-btn" > + </button>
-                    </div>
-                    <button type="button" onClick={onAdd} className="btn card-btn-cart d-grid gap-2 col-3 mx-auto mt-5"> Agregar al Carrito </button>
-
-                   { (getItemQty() > 0) ? <div className="btn-finalizar"><Link to="/cart" className="btn card-btn-cart"> Finalizar la compra </Link></div>  : null }
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> 
-
-*/

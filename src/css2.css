@@ -25,7 +25,16 @@ body{
 
 .bg-dark{
     background-color: rgb(0, 0, 0, 0.5) !important;
+    width: 100%;
 }
+
+.nav-contenedor{
+  display: flex!important;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
 
 .nav-tipografia{
     font-family: 'Josefin Sans', sans-serif;
@@ -92,7 +101,7 @@ body{
 
 .hero-home-container{
     position: relative;
-    top: -100px;
+    top: -110px;
     width: 100%;
     height: 100vh;
     background: url(./img/MM.jpg) no-repeat 80% / cover;
@@ -311,12 +320,23 @@ body{
 
  .container-nosotros{
     min-height: 80vh;
+    color: #fff; 
+ }
+
+ .container-nosotros h2 {
+    font-size: 2rem;
+    align-content: center;
  }
 
  /* CONTACTO */
  
  .contacto-txt{
     color: #fff
+ }
+
+ .iframe-mapa{
+    width: 100%;
+    max-height: 40vh;
  }
 
  .contacto-btn{
@@ -364,6 +384,10 @@ body{
 
 
 /* DETAIL */
+
+.detail-volver{
+  width: 200px;
+}
 
 .detail-cart-container{
   align-items: end;
@@ -421,6 +445,7 @@ body{
 .detail-finalizar{
   text-decoration: none;
   color: #fff !important;
+  width: 100%;
 }
 
 .detail-carrito:hover, .detail-finalizar:hover{
@@ -499,7 +524,38 @@ label {
   background-color: #fb4007;
 }
 
+/* SPINNER */
+.spinner-container{
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 20rem;
+}
+
+.spinner-style{
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* MEDIA */
+
+
+@media screen and (min-width: 425px){
+  .botonera-container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
 @media screen and (max-width: 768px){
+  .nav-contenedor{
+    display: inline !important;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+  }
   .hero-txt{
     margin-left: 50px;
     color: #fff;
@@ -527,6 +583,7 @@ label {
 }
 
 @media screen and (min-width: 768px){
+
   .hero-txt{
     margin-left: 50px;
     color: #fff;

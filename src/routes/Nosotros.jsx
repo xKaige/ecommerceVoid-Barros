@@ -3,13 +3,11 @@ function Nosotros() {
     <>
       <div className="container container-nosotros">
         <div className="row nosotros-container">
-          <div className="col-lg-4 mt-5"></div>
-          <div className="col-lg-4 mt-5">
+          <div className="col-lg-12 text-center col-12 mt-5">
             <div>
-              <h2>En construccion...</h2>
+              <h2>Sitio en construccion</h2>
             </div>
           </div>
-          <div className="col-lg-4 mt-5"></div>
         </div>
       </div>
     </>

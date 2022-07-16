@@ -26,6 +26,7 @@ function App() {
             <Route path="/Nosotros" element={<Nosotros />} />
             <Route path="/Contacto" element={<Contactos />} />
             <Route path="/Cart" element={<CartContainer />} />
+            <Route path="/*" element={<Home />} />
           </Routes>
           <Footer />
         </MyProvider>

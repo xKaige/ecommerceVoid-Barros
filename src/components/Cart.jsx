@@ -78,17 +78,3 @@ const Cart = ({ nombre, imagen, precio, deleteItem, id, cantidad, inicial }) => 
 
 export default Cart;
 
-/* 
-        <div className="col-lg-3 cart-container"> 
-          <h3 className="cart-name"> {nombre} </h3>
-          <div className="cart-img-container">
-              <img src={imagen} alt={nombre} className="img-fluid" />
-          </div>
-          <div className="cart-txt-container mt-3">
-            <p><span className="fw-bold">Precio:</span> {precio}</p>
-      
-            <button onClick={()=>{deleteItem(id)}} className="nav-item mt-5"> Elminiar Producto</button>
-          </div>
-        </div>
-
-*/

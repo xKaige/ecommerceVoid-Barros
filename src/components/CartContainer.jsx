@@ -45,22 +45,3 @@ function CartContainer() {
 }
 
 export default CartContainer;
-
-/* 
-
-              <div className='col-md-12  form-container'>
-                <h1 className='form-title mt-5'>Check Out</h1>
-                <form onSubmit={submitHandler} className="form"> 
-                    <label> Ingese su Nombre </label>
-                        <input name="name" onChange={handleChange} disabled={!enableAdd} placeholder="Ingrese su nombre"></input>
-                    <label> Ingese su email </label>
-                        <input name="email" onChange={handleChange} disabled={!enableAdd} placeholder="Ingrese su Email"></input>
-                    <label> Ingese Telefono de contacto </label>
-                        <input name="cel" onChange={handleChange} disabled={!enableAdd} placeholder="Ingrese su Celular"></input>                   
-                    <button onClick={handleClick} disabled={!enableAdd} type="submit" className='form-submit'>TERMINAR COMPRA</button>
-                </form> 
-              </div>
-
-
-
-*/

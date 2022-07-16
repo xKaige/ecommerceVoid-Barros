@@ -24,12 +24,12 @@ function NavBar() {
                 <a className="navbar-brand ms-5 logoEstilo" href="/">V<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" className="bi bi-circle-fill" viewBox="0 0 25 22">
                     <circle cx="10" cy="8" r="8" />
                 </svg>ID</a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div className="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
                     <ul className="navbar-nav gap-4 mt-2 align-items-center nav-contenedor">
-                        <li className="nav-item">
+                        <li className="nav-item ">
                             <Link to="/" className="nav-tipografia nav-link">Home</Link>
                         </li>
                         <li className="nav-item">
@@ -42,10 +42,10 @@ function NavBar() {
                          <Link to="/Cart" className="carrito-color d-flex gap-3"><CartWidget /> </Link>
                         </li>                        
                     </ul>
-
                 </div>
             </div>
         </nav>
+        
     )
 }
 

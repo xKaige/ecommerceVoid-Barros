@@ -1,8 +1,9 @@
 import { useState, useContext } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { CartContext } from "../Context/CartContext";
-import {  addDoc,  Timestamp,  collection,  getFirestore } from "firebase/firestore";
+import {  addDoc,  collection,  getFirestore } from "firebase/firestore";
 import Swal from 'sweetalert2';
+import { useNavigate  } from "react-router-dom";
 
 export default function CheckoutForm() {
 
@@ -13,7 +14,10 @@ export default function CheckoutForm() {
   const db = getFirestore();
   const orderCollection = collection(db, "orders");
 
+  const navigate = useNavigate()
+
   const sleep = () => new Promise((r) => setTimeout(r));
+  
 
   return (
     <>
@@ -53,7 +57,6 @@ export default function CheckoutForm() {
           await sleep();
           const order = {
             buyer: { ...values },
-            date: new Date(Timestamp.now().seconds * 1000),
             total: getItemPrice(),
             items: [...cart],
           };
@@ -61,6 +64,8 @@ export default function CheckoutForm() {
           addDoc(orderCollection, order)
             .then(({ id }) => {
              // setIdBuy(id);
+
+           
              Swal.fire(`
                   Gracias por su compra!
                   ID: ${id}
@@ -69,7 +74,10 @@ export default function CheckoutForm() {
                   Total: $${order.total}`) 
             })
             .finally(() => {
-              resetForm();
+              navigate("/");
+
+
+            resetForm();
             emptyCart();
             setFormSent(true);
             setTimeout(() => {
